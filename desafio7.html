@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Ejercicio 3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+  <style media="screen" type="text/css">
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #171c21;
+      font-family: 'Be Vietnam Pro', sans-serif;
+    }
+    .main {
+      margin-top: 200px;
+      display: flex;
+      flex-direction: column;
+      padding: 5px;
+      align-items: center;
+      gap: 30px;
+    }
+    .card {
+      height: 400px;
+      max-width: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 0px;
+      text-align: center;
+
+      background-color: rgb(105, 127, 147, 0.7);
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur( 1.5px );
+      -webkit-backdrop-filter: blur( 1.5px );
+      border-radius: 10px;
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+    .card__img {
+      max-width: 100px;
+      margin: 20px;
+    }
+    .main__ribbon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 2;
+    }
+    @media(min-width: 688px) {
+      .main {
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+      .card {
+        width: 20%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="main">
+    <div class="card">
+      <img src="https://img.icons8.com/ios/168/000000/space-shuttle.png" class="card__img"/>
+      <p class="card__body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi possimus perspiciatis, officia nulla delectus, porro.</p>
+    </div>
+    <div class="card">
+      <img class="card__img" src="https://img.icons8.com/pastel-glyph/100/000000/space-shuttle--v1.png"/>
+      <p class="card__body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi possimus perspiciatis, officia nulla delectus, porro.</p>
+    </div>
+    <div class="card">
+      <img class="card__img" src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/168/000000/external-space-science-education-dreamstale-lineal-dreamstale.png"/>
+      <p class="card__body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi possimus perspiciatis, officia nulla delectus, porro.</p>
+    </div>
+    <div class="card">
+      <img class="card__img" src="https://img.icons8.com/wired/168/000000/space-ship.png"/>
+      <p class="card__body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi possimus perspiciatis, officia nulla delectus, porro.</p>
+    </div>
+  </section>
+  <img src="assets/ejercicio-7_awwwards.png" alt="" class="main__ribbon">
+</body>
+</html>
